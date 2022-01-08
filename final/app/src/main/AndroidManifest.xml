@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cookingbookonline">
+    package="com.example.bruhfiness">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -14,9 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BruhFitness">
-        <activity android:name=".home.HomeActivity"></activity>
-        <activity android:name=".login.LoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.bruhfiness.home.HomeActivity"></activity>
+        <activity android:name="com.example.bruhfiness.login.LoginActivity" />
+        <activity android:name="com.example.bruhfiness.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

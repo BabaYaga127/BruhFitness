@@ -1,10 +1,10 @@
-package com.example.cookingbookonline.database;
+package com.example.bruhfiness.database;
 
 import android.database.Cursor;
 
-import com.example.cookingbookonline.model.Notification;
-import com.example.cookingbookonline.model.Post;
-import com.example.cookingbookonline.model.Profile;
+import com.example.bruhfiness.model.Notification;
+import com.example.bruhfiness.model.Post;
+import com.example.bruhfiness.model.Profile;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

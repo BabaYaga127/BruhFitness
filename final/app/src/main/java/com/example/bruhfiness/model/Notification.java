@@ -1,4 +1,4 @@
-package com.example.cookingbookonline.model;
+package com.example.bruhfiness.model;
 
 import org.json.JSONException;
 import org.json.JSONObject;

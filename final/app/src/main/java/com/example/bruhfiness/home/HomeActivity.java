@@ -1,4 +1,4 @@
-package com.example.cookingbookonline.home;
+package com.example.bruhfiness.home;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -8,20 +8,18 @@ import androidx.fragment.app.FragmentManager;
 
 import android.content.Context;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
-import com.example.cookingbookonline.MainActivity;
-import com.example.cookingbookonline.R;
-import com.example.cookingbookonline.database.DatabaseHelper;
-import com.example.cookingbookonline.model.Notification;
-import com.example.cookingbookonline.model.Post;
-import com.example.cookingbookonline.model.Profile;
+import com.example.bruhfiness.MainActivity;
+import com.example.bruhfiness.R;
+import com.example.bruhfiness.database.DatabaseHelper;
+import com.example.bruhfiness.model.Notification;
+import com.example.bruhfiness.model.Post;
+import com.example.bruhfiness.model.Profile;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -43,6 +41,8 @@ public class HomeActivity extends AppCompatActivity implements SettingFragment.S
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        Objects.requireNonNull(getSupportActionBar()).hide();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 

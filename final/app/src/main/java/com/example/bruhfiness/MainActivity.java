@@ -1,16 +1,13 @@
-package com.example.cookingbookonline;
+package com.example.bruhfiness;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
-import android.icu.text.UnicodeSetSpanner;
 import android.os.Bundle;
-import android.os.strictmode.SqliteObjectLeakedViolation;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.ImageView;
@@ -18,12 +15,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.toolbox.StringRequest;
-import com.example.cookingbookonline.database.DatabaseHelper;
-import com.example.cookingbookonline.home.HomeActivity;
-import com.example.cookingbookonline.login.LoginActivity;
-import com.example.cookingbookonline.model.Post;
-import com.example.cookingbookonline.model.Profile;
+import com.example.bruhfiness.database.DatabaseHelper;
+import com.example.bruhfiness.home.HomeActivity;
+import com.example.bruhfiness.login.LoginActivity;
+import com.example.bruhfiness.model.Profile;
 
 import java.io.File;
 import java.util.List;
@@ -50,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        getSupportActionBar().setDisplayShowHomeEnabled(false);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

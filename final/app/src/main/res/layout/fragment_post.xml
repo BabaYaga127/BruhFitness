@@ -54,7 +54,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:text="Name"
-                        android:textColor="#000"
+                        android:textColor="?android:attr/textColorPrimary"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -84,13 +84,13 @@
                 android:id="@+id/frag_post_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Post text duma\n1\n2\n3\n4\n5\n6\n7\n1\n2\n3\n4\n5\n6\n7\n1\n2\n3\n4\n5\n6\n7"
                 android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:textColor="#000"
-                android:textSize="20sp"/>
+                android:text="Post text duma\n1\n2\n3\n4\n5\n6\n7\n1\n2\n3\n4\n5\n6\n7\n1\n2\n3\n4\n5\n6\n7"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="20sp" />
 
             <ImageView
                 android:id="@+id/frag_post_image"

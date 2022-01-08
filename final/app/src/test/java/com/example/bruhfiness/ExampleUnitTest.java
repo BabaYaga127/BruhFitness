@@ -1,4 +1,4 @@
-package com.example.cookingbookonline;
+package com.example.bruhfiness;
 
 import org.junit.Test;
 

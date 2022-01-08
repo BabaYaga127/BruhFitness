@@ -1,4 +1,4 @@
-package com.example.cookingbookonline.home;
+package com.example.bruhfiness.home;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,13 +12,12 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.cookingbookonline.MainActivity;
-import com.example.cookingbookonline.R;
-import com.example.cookingbookonline.database.DatabaseHelper;
-import com.example.cookingbookonline.model.HomesAdapter;
-import com.example.cookingbookonline.model.Post;
-import com.example.cookingbookonline.model.Profile;
-import com.example.cookingbookonline.model.ProfileAdapter;
+import com.example.bruhfiness.MainActivity;
+import com.example.bruhfiness.R;
+import com.example.bruhfiness.database.DatabaseHelper;
+import com.example.bruhfiness.model.Post;
+import com.example.bruhfiness.model.Profile;
+import com.example.bruhfiness.model.ProfileAdapter;
 
 import java.util.List;
 

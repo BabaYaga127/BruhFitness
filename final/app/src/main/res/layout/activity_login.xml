@@ -3,85 +3,85 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".login.LoginActivity"
     android:padding="15dp"
-    android:gravity="center_horizontal">
+    tools:context=".login.LoginActivity">
 
     <LinearLayout
-        android:orientation="vertical"
+        android:id="@+id/login_main_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/login_main_layout">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/login_title"
             android:layout_width="match_parent"
-            android:layout_height="181dp"
-            android:text="Login"
-            android:textAlignment="center"
-            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
             android:paddingVertical="70dp"
-            android:textSize="30dp"
-            android:background="@drawable/cooking_title_background"/>
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="60sp" />
 
         <EditText
             android:id="@+id/login_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:hint="enter your name"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="100dp"
             android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp"
+            android:hint="enter your name"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/login_gmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:hint="enter email"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp"
+            android:hint="enter email"
+            android:inputType="textPersonName" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
-            android:gravity="center_vertical">
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/login_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
                 android:ems="14"
-                android:hint="enter password"/>
+                android:hint="enter password"
+                android:inputType="textPassword" />
 
             <ImageButton
                 android:id="@+id/login_tooglePassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_baseline_security_24"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_toRightOf="@id/login_password"/>
+                android:layout_toRightOf="@id/login_password"
+                app:srcCompat="@drawable/ic_baseline_security_24" />
 
             <EditText
                 android:id="@+id/login_password2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:layout_below="@id/login_password"
+                android:layout_marginTop="10dp"
                 android:ems="14"
                 android:hint="confirm password"
-                android:layout_below="@id/login_password"
-                android:layout_marginTop="10dp"/>
+                android:inputType="textPassword" />
 
         </RelativeLayout>
 
@@ -89,9 +89,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_margin="10dp"
             android:gravity="right"
-            android:layout_margin="10dp">
+            android:orientation="horizontal">
 
             <CheckBox
                 android:id="@+id/login_rememberMe"
@@ -104,7 +104,7 @@
                 android:id="@+id/login_loginButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Login"/>
+                android:text="Login" />
 
         </LinearLayout>
 
@@ -112,12 +112,11 @@
             android:id="@+id/login_promt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:textSize="15sp"
+            android:layout_margin="10dp"
             android:text="Don't have an account? register"
-            android:layout_margin="10dp"/>
+            android:textSize="15sp"
+            android:textStyle="italic" />
     </LinearLayout>
-
 
 
 </LinearLayout>

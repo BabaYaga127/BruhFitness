@@ -1,42 +1,24 @@
-package com.example.cookingbookonline.database;
+package com.example.bruhfiness.database;
 
-import android.app.DownloadManager;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.os.strictmode.SqliteObjectLeakedViolation;
-import android.widget.CursorAdapter;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.example.cookingbookonline.R;
-import com.example.cookingbookonline.model.Notification;
-import com.example.cookingbookonline.model.Post;
-import com.example.cookingbookonline.model.Profile;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.w3c.dom.Node;
+import com.example.bruhfiness.R;
+import com.example.bruhfiness.model.Notification;
+import com.example.bruhfiness.model.Post;
+import com.example.bruhfiness.model.Profile;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.IOError;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
-import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.List;
 

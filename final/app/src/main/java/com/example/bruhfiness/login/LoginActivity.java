@@ -1,13 +1,10 @@
-package com.example.cookingbookonline.login;
+package com.example.bruhfiness.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.provider.ContactsContract;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
@@ -18,39 +15,17 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.NetworkResponse;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.ServerError;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.HttpHeaderParser;
-import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import com.example.cookingbookonline.MainActivity;
-import com.example.cookingbookonline.R;
-import com.example.cookingbookonline.database.DataApi;
-import com.example.cookingbookonline.database.DatabaseHelper;
-import com.example.cookingbookonline.home.HomeActivity;
-import com.example.cookingbookonline.model.Notification;
-import com.example.cookingbookonline.model.Post;
-import com.example.cookingbookonline.model.Profile;
+import com.example.bruhfiness.MainActivity;
+import com.example.bruhfiness.R;
+import com.example.bruhfiness.database.DataApi;
+import com.example.bruhfiness.database.DatabaseHelper;
+import com.example.bruhfiness.home.HomeActivity;
+import com.example.bruhfiness.model.Profile;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
+
 
     static public final String KEY_LOGINSTATE = "loginstate";
     static public final String KEY_LOGIN_REMEBERME = "login_rememberme";
@@ -76,8 +51,10 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Objects.requireNonNull(getSupportActionBar()).hide();
+
         super.onCreate(savedInstanceState);
-        setContentView(com.example.cookingbookonline.R.layout.activity_login);
+        setContentView(com.example.bruhfiness.R.layout.activity_login);
 
         context = this;
 
@@ -280,6 +257,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void ToHomePage() {
+
         userProfile.user_remember = remember.isChecked();
         Intent intent = new Intent(this, HomeActivity.class);
         intent.putExtra(MainActivity.KEY_USER_PROFILE, userProfile);

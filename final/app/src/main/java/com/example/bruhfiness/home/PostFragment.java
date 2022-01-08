@@ -1,4 +1,4 @@
-package com.example.cookingbookonline.home;
+package com.example.bruhfiness.home;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,13 +18,11 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.cookingbookonline.MainActivity;
-import com.example.cookingbookonline.R;
-import com.example.cookingbookonline.database.DatabaseHelper;
-import com.example.cookingbookonline.model.Notification;
-import com.example.cookingbookonline.model.NotificationAdapter;
-import com.example.cookingbookonline.model.Post;
-import com.example.cookingbookonline.model.Profile;
+import com.example.bruhfiness.R;
+import com.example.bruhfiness.database.DatabaseHelper;
+import com.example.bruhfiness.model.NotificationAdapter;
+import com.example.bruhfiness.model.Post;
+import com.example.bruhfiness.model.Profile;
 
 public class PostFragment extends Fragment implements NotificationAdapter.ItemClickListener{
 

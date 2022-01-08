@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/HOCDAI/SOFTWARE_ENGINEERING/mobile/BruhFitness/final/app/src/main/res/layout/activity_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/HOCDAI/SOFTWARE_ENGINEERING/mobile/BruhFitness/final/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/HOCDAI/SOFTWARE_ENGINEERING/mobile/BruhFitness/final/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/HOCDAI/SOFTWARE_ENGINEERING/mobile/BruhFitness/final/app/src/main/res/layout/fragment_home.xml" value="0.24166666666666667" />
+        <entry key="..\:/HOCDAI/SOFTWARE_ENGINEERING/mobile/BruhFitness/final/app/src/main/res/layout/fragment_new_post.xml" value="0.24166666666666667" />
         <entry key="..\:/HOCDAI/SOFTWARE_ENGINEERING/mobile/BruhFitness/final/app/src/main/res/layout/fragment_setting.xml" value="0.36666666666666664" />
         <entry key="..\:/HOCDAI/mobile_developer/final/app/src/main/res/layout/a_notification.xml" value="0.36666666666666664" />
         <entry key="..\:/HOCDAI/mobile_developer/final/app/src/main/res/layout/a_post.xml" value="0.36666666666666664" />

@@ -21,7 +21,7 @@ import com.example.cookingbookonline.model.Profile;
 public class NewPostFragment extends Fragment {
 
     static public final String KEY_NEW_POST_FRAGMENT = "key_new_post_fragment";
-    static public final int interfaceID = R.id.home_toolbar_newpostButton;
+    //static public final int interfaceID = R.id.home_toolbar_newpostButton;
 
     Profile userProfile;
 
@@ -126,7 +126,7 @@ public class NewPostFragment extends Fragment {
         goBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listener.OnGoBack(R.id.home_toolbar_newpostButton);
+                //listener.OnGoBack(R.id.home_toolbar_newpostButton);
             }
         });
 

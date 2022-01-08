@@ -52,16 +52,16 @@ public class HomeActivity extends AppCompatActivity implements SettingFragment.S
         Intent intent = getIntent();
         userProfile = intent.getParcelableExtra(MainActivity.KEY_USER_PROFILE);
 
-        newPost = this.findViewById(R.id.home_toolbar_newpostButton);
-
-        newPost.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SetTrackableFragmentContainer2(NewPostFragment.newInstance(userProfile), NewPostFragment.interfaceID);
-                //OnPreLayoutChangeHandle(NewPostFragment.interfaceID, context);
-
-            }
-        });
+//        newPost = this.findViewById(R.id.home_toolbar_newpostButton);
+//
+//        newPost.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                SetTrackableFragmentContainer2(NewPostFragment.newInstance(userProfile), NewPostFragment.interfaceID);
+//                //OnPreLayoutChangeHandle(NewPostFragment.interfaceID, context);
+//
+//            }
+//        });
 
         dbHeper = new DatabaseHelper(context, new DatabaseHelper.LoadingListener() {
             @Override

@@ -37,17 +37,6 @@
                         android:textStyle="bold"
                         android:layout_weight="1"/>
 
-                    <ImageButton
-                        android:id="@+id/home_toolbar_newpostButton"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="5dp"
-                        android:background="@drawable/ic_baseline_post_add_24"
-                        android:backgroundTint="@color/white"
-                        android:gravity="right"
-                        android:text="Button"
-                        tools:ignore="SpeakableTextPresentCheck" />
                 </LinearLayout>
 
 

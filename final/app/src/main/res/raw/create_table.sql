@@ -28,11 +28,11 @@ create table ReceivedNotifications(
 	receiverId int references Profiles (ID),
 	notificationId int references Notifications (ID)
 )
-
-create table Exercises(
-    ID int primary key,
-    name varchar(50) not null,
-    image int not null,
-    instruction varchar(100) not null,
-)
+--
+--create table Exercises(
+--    ID int primary key,
+--    name varchar(50) not null,
+--    image int not null,
+--    instruction varchar(100) not null,
+--)
 

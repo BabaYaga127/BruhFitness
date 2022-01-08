@@ -13,7 +13,7 @@
         android:label="Bruh Fitness"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CookingBookOnline">
+        android:theme="@style/Theme.BruhFitness">
         <activity android:name=".home.HomeActivity"></activity>
         <activity android:name=".login.LoginActivity" />
         <activity android:name=".MainActivity">

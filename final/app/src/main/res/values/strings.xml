@@ -1,3 +1,35 @@
 <resources>
-    <string name="app_name">BruhFitness</string>
+    <string name="app_name">Cooking Book Online</string>
+
+    <string-array name="test_recyclerView">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+
+    <string-array name="test_recyclerView2">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+        <item>e</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+        <item>k</item>
+        <item>l</item>
+        <item>u</item>
+        <item>v</item>
+        <item>q</item>
+    </string-array>
 </resources>

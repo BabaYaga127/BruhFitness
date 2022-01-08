@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/setting_scrollView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp">
+
+
+            <ImageView
+                android:id="@+id/new_post_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="44dp"
+                android:src="@drawable/ic_baseline_add_a_photo_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/new_post_text" />
+
+            <ImageView
+                android:id="@+id/new_post_avatar"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/ic_baseline_person_24"
+                app:layout_constraintStart_toStartOf="@+id/new_post_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/new_post_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Name"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/new_post_avatar"
+                app:layout_constraintTop_toTopOf="@+id/new_post_avatar" />
+
+            <TextView
+                android:id="@+id/new_post_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="status"
+                android:textColor="#a9a9a9"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/new_post_name"
+                app:layout_constraintTop_toBottomOf="@+id/new_post_name" />
+
+            <EditText
+                android:id="@+id/new_post_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:layout_marginTop="8dp"
+                android:gravity="top"
+                android:scrollbarStyle="outsideInset"
+                android:inputType="textMultiLine"
+                android:hint="Your ideas..."
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.526"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/new_post_avatar" />
+
+            <ImageView
+                android:id="@+id/new_post_removeImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/new_post_image"
+                app:layout_constraintEnd_toEndOf="@+id/new_post_image"
+                app:srcCompat="@drawable/ic_baseline_close_24" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <Button
+            android:id="@+id/new_post_uploadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="+ upload  image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/new_post_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reset"
+                android:layout_marginRight="50dp" />
+
+            <Button
+                android:id="@+id/new_post_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="post" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/new_post_go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="go back" />
+
+    </LinearLayout>
+
+</ScrollView>

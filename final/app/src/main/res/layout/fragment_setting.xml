@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/setting_scrollView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/setting_showBackgroundImg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ic_baseline_home_24" />
+
+
+            <ImageView
+                android:id="@+id/setting_showAvatarImg"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="@+id/setting_showBackgroundImg"
+                app:layout_constraintTop_toBottomOf="@+id/setting_showBackgroundImg"
+                android:src="@drawable/ic_baseline_person_24" />
+
+            <TextView
+                android:id="@+id/setting_showName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Name"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/setting_showAvatarImg"
+                app:layout_constraintTop_toTopOf="@+id/setting_showAvatarImg" />
+
+            <TextView
+                android:id="@+id/setting_showGmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="mymail@gmail.com"
+                android:textColor="#a9a9a9"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/setting_showName"
+                app:layout_constraintTop_toBottomOf="@+id/setting_showName" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/setting_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not you? logout"
+            android:textColor="#a9a9a9"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/setting_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="enter new name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/setting_changeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="change name"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/setting_name"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/setting_gmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="enter new email"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/setting_changeGmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="change gmail"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/setting_gmail"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/setting_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="enter old password"/>
+
+            <ImageButton
+                android:id="@+id/setting_togglePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/setting_password"
+                android:minHeight="48dp"
+                android:onClick="OnClickTooglePassword"
+                app:srcCompat="@drawable/ic_baseline_security_24"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/setting_changePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="change password"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/setting_togglePassword"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/setting_newPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setting_password"
+                android:ems="10"
+                android:hint="enter new password"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/setting_textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:text="new password"
+                android:layout_toRightOf="@id/setting_newPassword"
+                android:layout_alignBottom="@id/setting_newPassword"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/setting_newPassword2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:layout_below="@id/setting_newPassword"
+                android:hint="retype new password"/>
+
+            <TextView
+                android:id="@+id/setting_textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:text="confirm new password"
+                android:layout_toRightOf="@id/setting_newPassword2"
+                android:layout_alignBottom="@id/setting_newPassword2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/setting_profileImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ upload profile image"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/setting_backgroundImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ upload profile image"
+            android:layout_margin="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/setting_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cancel"
+                android:layout_marginRight="50dp" />
+
+            <Button
+                android:id="@+id/setting_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="save"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -43,9 +43,9 @@ public class PostFragment extends Fragment implements NotificationAdapter.ItemCl
 
     ImageView  avatar, image;
     ImageButton postComment;
-    TextView name, status, likeNum, commentNum, shareNum;
+    TextView name, timecount, likeNum, commentNum, shareNum;
     YouTubePlayerView ytPlayerView;
-    Button subcription, like, share, back;
+    Button timer, like, share, back;
     EditText comment;
     public int counter;
 
@@ -196,7 +196,7 @@ public class PostFragment extends Fragment implements NotificationAdapter.ItemCl
         timecount = view.findViewById(R.id.frag_post_timecount);
         timer.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                new CountDownTimer(30000,1000){
+                new CountDownTimer(30000000,1000){
                     public void onTick(long millisUntilFinished){
                         timecount.setText(String.valueOf(counter));
                         counter++;

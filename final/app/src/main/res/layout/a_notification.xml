@@ -32,10 +32,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
+                android:text="Name"
+                android:textColor="?android:attr/textColorPrimary"
                 android:textSize="20dp"
-                android:textStyle="bold"
-                android:textColor="#000"
-                android:text="Name" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/notification_status"
@@ -53,9 +53,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:textSize="16dp"
-                android:textColor="#000"
-                android:text="Has liked your photos."/>
+                android:text="Has liked your photos."
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16dp" />
 
         </LinearLayout>
     </LinearLayout>

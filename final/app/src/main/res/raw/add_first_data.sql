@@ -4,7 +4,7 @@ insert into Profiles (ID, backgroundImg, avatar, name, gmail, password) values (
 insert into Profiles (ID, backgroundImg, avatar, name, gmail, password) values (3, 2131230817, 2131230826, 'The Perfect Push Up', 'D@gmail.com', 'Dpassword')
 
 insert into Posts (ID, ownerId, status, text, image) values	(0, 0, '09-09-2010', 'LNGaT7HuP1Q', 2131230817)
-insert into Posts (ID, ownerId, status, text, image) values	(1, 1, '09-07-2010', 'BvNVQrdt0A', 2131230817)
+insert into Posts (ID, ownerId, status, text, image) values	(1, 1, '09-07-2010', 'gT_XCCJ9bQU', 2131230817)
 insert into Posts (ID, ownerId, status, text, image) values	(2, 2, '09-06-2010', 'W4eKVKwf3rQ', 2131230817)
 insert into Posts (ID, ownerId, status, text, image) values	(3, 3, '09-06-2010', 'IODxDxX7oi4', 2131230817)
 

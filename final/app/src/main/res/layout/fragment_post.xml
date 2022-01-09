@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
 
                 app:videoId="ff1S43ggbQQ"
-                app:autoPlay="true" />
+                app:autoPlay="false" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

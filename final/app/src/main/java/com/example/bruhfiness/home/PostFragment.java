@@ -3,6 +3,7 @@ package com.example.bruhfiness.home;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,9 +40,10 @@ public class PostFragment extends Fragment implements NotificationAdapter.ItemCl
 
     ImageView  avatar, image;
     ImageButton postComment;
-    TextView name, status, text, likeNum, commentNum, shareNum;
-    Button subcription, like, share, back;
+    TextView name, status, text, likeNum, commentNum, shareNum, timecount;
+    Button subcription, like, share, back, timer;
     EditText comment;
+    public int counter;
 
     ItemClickListener listener;
 
@@ -182,6 +184,21 @@ public class PostFragment extends Fragment implements NotificationAdapter.ItemCl
             }
         });
 
+        timer = view.findViewById(R.id.frag_post_timer);
+        timecount = view.findViewById(R.id.frag_post_timecount);
+        timer.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                new CountDownTimer(30000,1000){
+                    public void onTick(long millisUntilFinished){
+                        timecount.setText(String.valueOf(counter));
+                        counter++;
+                    }
+                    public void onFinish(){
+                        timecount.setText("FINISH!");
+                    }
+                }.start();
+            }
+        });
         comment = view.findViewById(R.id.frag_post_comment);
 
         ChangeLayout();
@@ -229,4 +246,5 @@ public class PostFragment extends Fragment implements NotificationAdapter.ItemCl
     public void OnClick(int profileId) {
         listener.OnGoToPersonalProfie(profileId);
     }
+
 }

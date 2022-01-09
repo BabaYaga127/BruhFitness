@@ -34,14 +34,6 @@
                     android:background="@drawable/ic_baseline_arrow_back_ios_24"
                     android:onClick="GoBackToPreviousFragment"/>
 
-                <ImageView
-                    android:id="@+id/frag_post_avatar"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:background="@drawable/ic_launcher_foreground"
-                    android:text=""
-                    android:layout_weight="1"/>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -58,46 +50,15 @@
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/frag_post_status"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:text="status"
-                        android:textColor="#a9a9a9"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
                 </LinearLayout>
 
-                <Button
-                    android:id="@+id/frag_post_subscription"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:text=""
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_launcher_background"/>
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/frag_post_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:text="Post text duma\n1\n2\n3\n4\n5\n6\n7\n1\n2\n3\n4\n5\n6\n7\n1\n2\n3\n4\n5\n6\n7"
-                android:textColor="?android:attr/textColorPrimary"
-                android:textSize="20sp" />
-
             <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-                android:id="@+id/youtube_player_view"
+                android:id="@+id/frag_post_yt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                app:videoId="ff1S43ggbQQ"
                 app:autoPlay="false" />
             <LinearLayout
                 android:layout_width="match_parent"

@@ -220,13 +220,13 @@ public class ProfileAdapter extends RecyclerView.Adapter {
         public ViewHodlerPost(@NonNull View itemView) {
             super(itemView);
 
-            avatar = itemView.findViewById(R.id.post_avatar);               // Button
+//            avatar = itemView.findViewById(R.id.post_avatar);               // Button
             name = itemView.findViewById(R.id.post_name);                   // TextView
-            status = itemView.findViewById(R.id.post_status);               // TextView
-            subscription = itemView.findViewById(R.id.post_subscription);   // Button
-            text = itemView.findViewById(R.id.post_text);                   // TextView
+//            status = itemView.findViewById(R.id.post_status);               // TextView
+//            subscription = itemView.findViewById(R.id.post_subscription);   // Button
+//            text = itemView.findViewById(R.id.post_text);                   // TextView
             show_more = itemView.findViewById(R.id.post_showMore);          // TextView
-            image = itemView.findViewById(R.id.post_image);                 // Image
+//            image = itemView.findViewById(R.id.post_image);                 // Image
             likeNum = itemView.findViewById(R.id.post_likeNumber);          // TextView
             commentNum = itemView.findViewById(R.id.post_commentNumber);    // TextView
             shareNum = itemView.findViewById(R.id.post_shareNumber);        // TextView

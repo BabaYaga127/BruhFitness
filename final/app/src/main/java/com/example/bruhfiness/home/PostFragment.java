@@ -23,6 +23,9 @@ import com.example.bruhfiness.database.DatabaseHelper;
 import com.example.bruhfiness.model.NotificationAdapter;
 import com.example.bruhfiness.model.Post;
 import com.example.bruhfiness.model.Profile;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 public class PostFragment extends Fragment implements NotificationAdapter.ItemClickListener{
 
@@ -39,7 +42,8 @@ public class PostFragment extends Fragment implements NotificationAdapter.ItemCl
 
     ImageView  avatar, image;
     ImageButton postComment;
-    TextView name, status, text, likeNum, commentNum, shareNum;
+    TextView name, status, likeNum, commentNum, shareNum;
+    YouTubePlayerView ytPlayerView;
     Button subcription, like, share, back;
     EditText comment;
 
@@ -113,19 +117,23 @@ public class PostFragment extends Fragment implements NotificationAdapter.ItemCl
             }
         });
 
-        avatar = view.findViewById(R.id.frag_post_avatar);
-        avatar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // intent to go to personal profile
-                listener.OnGoToPersonalProfie(post.profileId);
-            }
-        });
+//        avatar = view.findViewById(R.id.frag_post_avatar);
+//        avatar.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // intent to go to personal profile
+//                listener.OnGoToPersonalProfie(post.profileId);
+//            }
+//        });
 
         name = view.findViewById(R.id.frag_post_name);
-        status = view.findViewById(R.id.frag_post_status);
-        subcription = view.findViewById(R.id.frag_post_subscription);
-        text = view.findViewById(R.id.frag_post_text);
+//        status = view.findViewById(R.id.frag_post_status);
+//        subcription = view.findViewById(R.id.frag_post_subscription);
+        ytPlayerView = view.findViewById(R.id.frag_post_yt);
+        getLifecycle().addObserver(ytPlayerView);
+
+
+
 //        image = view.findViewById(R.id.frag_post_image);
         likeNum = view.findViewById(R.id.frag_post_likeNumber);
         commentNum = view.findViewById(R.id.frag_post_commentNumber);
@@ -194,10 +202,19 @@ public class PostFragment extends Fragment implements NotificationAdapter.ItemCl
         post = dbHelper.getPost(post.ID, userProfile.ID);
 
         if (post != null){
-            avatar.setImageResource(post.profileAvatar);
+//            avatar.setImageResource(post.profileAvatar);
             name.setText(post.profileName);
-            status.setText(post.status);
-            text.setText(post.text);
+//            status.setText(post.status);
+//            ytUrl.setText(post.text);
+
+            ytPlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                @Override
+                public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                    String videoId = post.text;
+                    youTubePlayer.cueVideo(videoId, 0);
+                }
+            });
+
 //            image.setImageResource(post.image);
             likeNum.setText(String.valueOf(post.likeNum) + " likes");
             commentNum.setText(String.valueOf(post.commentNum) + " likes");

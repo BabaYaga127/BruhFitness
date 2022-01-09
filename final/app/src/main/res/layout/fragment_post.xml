@@ -92,11 +92,11 @@
                 android:textColor="?android:attr/textColorPrimary"
                 android:textSize="20sp" />
 
-            <ImageView
-                android:id="@+id/frag_post_image"
+            <com.google.android.youtube.player.YouTubePlayerView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                app:srcCompat="@drawable/ic_launcher_background" />
+                android:layout_height="wrap_content"
+                android:id="@+id/ytPlayer"
+                app:layout_constraintTop_toTopOf="parent"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

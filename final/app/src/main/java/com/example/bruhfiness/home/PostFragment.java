@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,6 +24,9 @@ import com.example.bruhfiness.database.DatabaseHelper;
 import com.example.bruhfiness.model.NotificationAdapter;
 import com.example.bruhfiness.model.Post;
 import com.example.bruhfiness.model.Profile;
+import com.google.android.youtube.player.YouTubeInitializationResult;
+import com.google.android.youtube.player.YouTubePlayer;
+import com.google.android.youtube.player.YouTubePlayerView;
 
 public class PostFragment extends Fragment implements NotificationAdapter.ItemClickListener{
 
@@ -46,6 +50,10 @@ public class PostFragment extends Fragment implements NotificationAdapter.ItemCl
     ItemClickListener listener;
 
     DatabaseHelper dbHelper;
+
+    String api_key = "AIzaSyAXAl6I2fe-knwc9xVK8209XQpiUnMohKU";
+
+
 
     public interface ItemClickListener {
         void OnGoBack();
@@ -85,7 +93,34 @@ public class PostFragment extends Fragment implements NotificationAdapter.ItemCl
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+//        View view = inflater.inflate(R.layout.fragment_post, container, false);
+
+        // Get reference to the view of Video player
+
+
         view = inflater.inflate(R.layout.fragment_post, container, false);
+
+        YouTubePlayerView ytPlayer = view.findViewById(R.id.ytPlayer);
+        ytPlayer.initialize(
+                api_key,
+                new YouTubePlayer.OnInitializedListener() {
+                    @Override
+                    public void onInitializationSuccess(
+                            YouTubePlayer.Provider provider,
+                            YouTubePlayer youTubePlayer, boolean b)
+                    {
+                        youTubePlayer.loadVideo("HzeK7g8cD0Y");
+                        youTubePlayer.play();
+                    }
+                    @Override
+                    public void onInitializationFailure(YouTubePlayer.Provider provider,
+                                                        YouTubeInitializationResult
+                                                                youTubeInitializationResult)
+                    {
+                        Toast.makeText(getContext(), "Video player Failed", Toast.LENGTH_SHORT).show();
+                    }
+                });
 
         if (getArguments() != null){
             post = (Post) getArguments().getParcelable(KEY_POST_FRAGMENT);
@@ -126,7 +161,7 @@ public class PostFragment extends Fragment implements NotificationAdapter.ItemCl
         status = view.findViewById(R.id.frag_post_status);
         subcription = view.findViewById(R.id.frag_post_subscription);
         text = view.findViewById(R.id.frag_post_text);
-        image = view.findViewById(R.id.frag_post_image);
+//        image = view.findViewById(R.id.frag_post_image);
         likeNum = view.findViewById(R.id.frag_post_likeNumber);
         commentNum = view.findViewById(R.id.frag_post_commentNumber);
         shareNum = view.findViewById(R.id.frag_post_shareNumber);

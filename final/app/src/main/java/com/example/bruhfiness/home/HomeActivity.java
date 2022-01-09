@@ -83,8 +83,7 @@ public class HomeActivity extends AppCompatActivity implements SettingFragment.S
         OnPreLayoutChangeHandle(R.id.bot_nav_home, context);
 
         // bottom navigation bar
-        BottomNavigationView bottomNav = (BottomNavigationView) findViewById(R.id.bottom_navigation);
-
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnItemSelectedListener( new NavigationBarView.OnItemSelectedListener()
         {
             @Override

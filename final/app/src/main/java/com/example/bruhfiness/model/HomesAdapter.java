@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bruhfiness.R;
@@ -256,4 +258,5 @@ public class HomesAdapter extends RecyclerView.Adapter<HomesAdapter.MyViewHolder
             }
         }
     }
+
 }

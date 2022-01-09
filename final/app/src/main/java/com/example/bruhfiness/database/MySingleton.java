@@ -1,4 +1,4 @@
-package com.example.cookingbookonline.database;
+package com.example.bruhfiness.database;
 
 import android.content.Context;
 

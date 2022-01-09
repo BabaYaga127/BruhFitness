@@ -1,18 +1,11 @@
-package com.example.cookingbookonline.home;
+package com.example.bruhfiness.home;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.text.style.AlignmentSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,17 +13,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.cookingbookonline.MainActivity;
-import com.example.cookingbookonline.R;
-import com.example.cookingbookonline.database.DatabaseHelper;
-import com.example.cookingbookonline.model.HomesAdapter;
-import com.example.cookingbookonline.model.Notification;
-import com.example.cookingbookonline.model.NotificationAdapter;
-import com.example.cookingbookonline.model.Profile;
-
-import org.w3c.dom.Text;
-
-import java.util.List;
+import com.example.bruhfiness.R;
+import com.example.bruhfiness.model.NotificationAdapter;
 
 public class NotificationFragment extends Fragment implements NotificationAdapter.ItemClickListener {
 

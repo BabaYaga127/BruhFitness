@@ -1,11 +1,11 @@
-package com.example.cookingbookonline.model;
+package com.example.bruhfiness.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import androidx.annotation.NonNull;
 
-import com.example.cookingbookonline.R;
+import com.example.bruhfiness.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

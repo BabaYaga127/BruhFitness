@@ -1,24 +1,22 @@
-package com.example.cookingbookonline.database;
+package com.example.bruhfiness.database;
 
 import android.content.Context;
 import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
-import com.example.cookingbookonline.model.Notification;
-import com.example.cookingbookonline.model.Post;
-import com.example.cookingbookonline.model.Profile;
+import com.example.bruhfiness.model.Notification;
+import com.example.bruhfiness.model.Post;
+import com.example.bruhfiness.model.Profile;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text="Name"
-                android:textColor="#000"
+                android:textColor="?android:attr/textColorPrimary"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/setting_showAvatarImg"
@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="mymail@gmail.com"
-                android:textColor="#a9a9a9"
+                android:textColor="?android:attr/textColorPrimary"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/setting_showName"
@@ -171,13 +171,13 @@
                 android:id="@+id/setting_textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:textSize="15sp"
-                android:text="new password"
-                android:layout_toRightOf="@id/setting_newPassword"
                 android:layout_alignBottom="@id/setting_newPassword"
+                android:layout_marginLeft="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_toRightOf="@id/setting_newPassword"
+                android:text="new password"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/setting_newPassword2"
@@ -192,13 +192,13 @@
                 android:id="@+id/setting_textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:textSize="15sp"
-                android:text="confirm new password"
-                android:layout_toRightOf="@id/setting_newPassword2"
                 android:layout_alignBottom="@id/setting_newPassword2"
+                android:layout_marginLeft="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_toRightOf="@id/setting_newPassword2"
+                android:text="confirm new password"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="15sp" />
 
         </RelativeLayout>
 

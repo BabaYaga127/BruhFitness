@@ -201,8 +201,8 @@ public class HomeActivity extends AppCompatActivity implements SettingFragment.S
 
     @Override
     public void OnGoToPersonalProfie(int profileId) {
-        Fragment fragment = ProfileFragment.newInstance(dbHeper.getProfile(profileId), userProfile);
-        SetTrackableFragmentContainer2(fragment, R.id.post_avatar);
+//        Fragment fragment = ProfileFragment.newInstance(dbHeper.getProfile(profileId), userProfile);
+//        SetTrackableFragmentContainer2(fragment, R.id.post_avatar);
     }
 
     @Override

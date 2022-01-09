@@ -98,9 +98,8 @@ public class HomeFragment extends Fragment implements HomesAdapter.ItemClickList
         //toast.show();
     }
 
-    @Override
     public void OnShowPersonalProfile(int profileId) {
-        listener.OnGoToPersonalProfie(profileId);
+
     }
 
     @Override

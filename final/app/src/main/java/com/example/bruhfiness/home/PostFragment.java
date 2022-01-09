@@ -126,7 +126,7 @@ public class PostFragment extends Fragment implements NotificationAdapter.ItemCl
         status = view.findViewById(R.id.frag_post_status);
         subcription = view.findViewById(R.id.frag_post_subscription);
         text = view.findViewById(R.id.frag_post_text);
-        image = view.findViewById(R.id.frag_post_image);
+//        image = view.findViewById(R.id.frag_post_image);
         likeNum = view.findViewById(R.id.frag_post_likeNumber);
         commentNum = view.findViewById(R.id.frag_post_commentNumber);
         shareNum = view.findViewById(R.id.frag_post_shareNumber);
@@ -198,7 +198,7 @@ public class PostFragment extends Fragment implements NotificationAdapter.ItemCl
             name.setText(post.profileName);
             status.setText(post.status);
             text.setText(post.text);
-            image.setImageResource(post.image);
+//            image.setImageResource(post.image);
             likeNum.setText(String.valueOf(post.likeNum) + " likes");
             commentNum.setText(String.valueOf(post.commentNum) + " likes");
             shareNum.setText(String.valueOf(post.shareNum) + " likes");

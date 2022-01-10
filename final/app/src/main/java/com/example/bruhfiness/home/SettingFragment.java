@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -134,12 +135,12 @@ public class SettingFragment extends Fragment {
                     if (str_pass2.equals(str_pass3)){
                         SetPassword(str_pass2);
                     } else {
-//                        Toast toast = Toast.makeText(view.getContext(), "new passwords don't match each other", Toast.LENGTH_SHORT);
-//                        toast.show();
+                        Toast toast = Toast.makeText(view.getContext(), "new passwords don't match each other", Toast.LENGTH_SHORT);
+                        toast.show();
                     }
                 } else {
-//                    Toast toast = Toast.makeText(view.getContext(), "incorect old password", Toast.LENGTH_LONG);
-//                    toast.show();
+                    Toast toast = Toast.makeText(view.getContext(), "incorect old password", Toast.LENGTH_LONG);
+                    toast.show();
                 }
             }
         });

@@ -51,7 +51,6 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Objects.requireNonNull(getSupportActionBar()).hide();
 
         super.onCreate(savedInstanceState);
         setContentView(com.example.bruhfiness.R.layout.activity_login);

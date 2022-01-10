@@ -192,13 +192,15 @@ public class PostFragment extends Fragment implements NotificationAdapter.ItemCl
             }
         });
 
+        final boolean[] timer_check = {false};
         timer = view.findViewById(R.id.frag_post_timer);
         timecount = view.findViewById(R.id.frag_post_timecount);
         timer.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                new CountDownTimer(30000000,1000){
+                timer_check[0] = !timer_check[0];
+                new CountDownTimer(300000,1000){
                     public void onTick(long millisUntilFinished){
-                        timecount.setText(String.valueOf(counter));
+                        timecount.setText(String.valueOf(millisUntilFinished/1000));
                         counter++;
                     }
                     public void onFinish(){
